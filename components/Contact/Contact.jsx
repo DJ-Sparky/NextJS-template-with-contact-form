@@ -8,7 +8,7 @@ const ContactPage = () => (
           name='test-form'
           method='POST'
           data-netlify='true'
-          netlify-honeypot='bot-field'
+          data-netlify-honeypot='bot-field'
           className='mb-0 space-y-6'
           action='../../success'
           aria-label='Contact Form'
