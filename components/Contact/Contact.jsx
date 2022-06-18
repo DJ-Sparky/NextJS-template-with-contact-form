@@ -11,6 +11,7 @@ const ContactPage = () => (
           data-netlify-honeypot='bot-field'
           className='mb-0 space-y-6'
           aria-label='Contact Form'
+          onSubmit='submit'
         >
           <input type='hidden' name='test-form' value='test-form' />
           <p className='hidden'>
