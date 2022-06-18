@@ -12,8 +12,9 @@ const ContactPage = () => (
           className='mb-0 space-y-6'
           aria-label='Contact Form'
           onSubmit='submit'
+          action='/success'
         >
-          <input type='hidden' name='test-form' value='test-form' />
+          <input type='hidden' name='form-name' value='test-form' />
           <p className='hidden'>
             <label>
               Don’t fill this out if you’re human: <input name='bot-field' />
