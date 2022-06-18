@@ -10,10 +10,15 @@ const ContactPage = () => (
           data-netlify='true'
           netlify-honeypot='bot-field'
           className='mb-0 space-y-6'
-          action='#'
+          action='../../success'
           aria-label='Contact Form'
         >
-          <input type='hidden' name='contact' value='contact' />
+          <input type='hidden' name='form-name' value='test-contact' />
+          <p className='hidden'>
+            <label>
+              Don’t fill this out if you’re human: <input name='bot-field' />
+            </label>
+          </p>
           <div>
             <label name='email' className='block'>
               Email address
@@ -24,9 +29,20 @@ const ContactPage = () => (
                 name='email'
                 type='email'
                 required
-                className='w-full border-2 border-buttonblue px-3 py-2 rounded-lg shadow-sm 
-								bg-transparent bg-red-500
-								focus:outline-none focus:border-buttondark focus:ring focus:ring-buttonblue bg-inputbackground'
+                className='w-full 
+                            border-2 
+                            border-buttonblue 
+                            px-3 
+                            py-2 
+                            rounded-lg 
+                            shadow-sm 
+                            bg-transparent 
+                            bg-red-500
+                            focus:outline-none 
+                            focus:border-buttondark 
+                            focus:ring 
+                            focus:ring-buttonblue 
+                            bg-inputbackground'
                 aria-label='Input your email'
               />
             </div>
@@ -41,19 +57,19 @@ const ContactPage = () => (
                 name='Service-required'
                 id='Service-required'
                 className='appearance-none 
-							w-full 
-							border-2 
-							border-buttonblue 
-							px-3 
-							py-2 
-							rounded-lg 
-							shadow-sm
-							bg-transparent
-							focus:outline-none 
-							focus:border-buttondark 
-							focus:ring 
-							focus:ring-buttonblue 
-							bg-inputbackground'
+                            w-full 
+                            border-2 
+                            border-buttonblue 
+                            px-3 
+                            py-2 
+                            rounded-lg 
+                            shadow-sm
+                            bg-transparent
+                            focus:outline-none 
+                            focus:border-buttondark 
+                            focus:ring 
+                            focus:ring-buttonblue 
+                            bg-inputbackground'
                 aria-label='Required Services'
               >
                 <option value='' hidden='hidden' aria-label='Please Select'>
