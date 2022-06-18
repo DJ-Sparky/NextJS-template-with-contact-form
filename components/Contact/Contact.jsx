@@ -5,7 +5,7 @@ const ContactPage = () => (
     <div className='mt-2 sm:mx-auto sm:w-full sm:max-w-md'>
       <div className='bg-white py-8 px-6 border-2 border-buttonblue shadow-2 rounded-lg sm:px-10'>
         <form
-          name='contact'
+          name='test-form'
           method='POST'
           data-netlify='true'
           netlify-honeypot='bot-field'
@@ -13,7 +13,7 @@ const ContactPage = () => (
           action='../../success'
           aria-label='Contact Form'
         >
-          <input type='hidden' name='form-name' value='test-contact' />
+          <input type='hidden' name='test-form' value='test-form' />
           <p className='hidden'>
             <label>
               Don’t fill this out if you’re human: <input name='bot-field' />
