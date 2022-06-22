@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import navStyles from '../../styles/Nav.module.scss'
+import Dropdown from '../Navbar/Dropdown'
 import Image from 'next/image'
 import logo from '../../images/logo.png'
 import Link from 'next/link'
@@ -22,6 +23,7 @@ const Nav = () => {
             </a>
           </Link>
         </div>
+
         <div className={navStyles.menu}>
           <Link href='/'>
             <a aria-label='Home page'>Home</a>
@@ -33,6 +35,7 @@ const Nav = () => {
             <a aria-label='Contact page'>Contact</a>
           </Link>
           {/* <a href='tel:07503-885730'>07503 885730</a> */}
+          <Dropdown />
         </div>
         <button
           onClick={() => setHamburger(!hamburger)}
@@ -60,6 +63,7 @@ const Nav = () => {
           <Link href='/'>
             <a aria-label='Contact page'>Contact</a>
           </Link>
+          <Dropdown />
         </div>
       </div>
     </nav>
